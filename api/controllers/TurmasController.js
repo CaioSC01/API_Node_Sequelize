@@ -1,3 +1,5 @@
+const database = require("../models");
+
 class TurmaController {
     static async pegaTodasAsTurmas(req, res) {
         try {

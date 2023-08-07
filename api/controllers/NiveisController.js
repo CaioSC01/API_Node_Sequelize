@@ -1,4 +1,6 @@
-class NivelController {
+const database = require("../models");
+
+class NiveisController {
     static async pegaTodosOsNiveis(req, res) {
         try {
             const todosOsNiveis = await database.Niveis.findAll();
@@ -9,4 +11,4 @@ class NivelController {
     }
 }
 
-module.exports = NivelController;
+module.exports = NiveisController;
